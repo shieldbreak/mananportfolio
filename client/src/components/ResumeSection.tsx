@@ -2,31 +2,31 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Senior Data Engineer",
-    company: "TechCorp Inc.",
-    period: "2020 - Present",
-    description: "Led the design and implementation of scalable data pipelines processing 5TB+ daily. Reduced processing time by 40% through optimization and parallel processing techniques."
+    title: "EVENT COORDINATOR",
+    company: "Film and Media Council",
+    period: "Sep 2023 - Nov 2023",
+    description: "Led a team of 25+ students for publicity and management for this Event and ciently Coordinated the Event Realm of Wonders at FMC Weekend, overseeing 50+ participants from across India and managing all aspects to ensure smooth execution and High engagement."
   },
   {
-    title: "DevOps Engineer",
-    company: "InnoSystems LLC",
-    period: "2018 - 2020",
-    description: "Implemented CI/CD pipelines reducing deployment time by 60%. Managed Kubernetes clusters and containerized applications for improved scalability and resource utilization."
+    title: "ANIMATION EXECUTIVE",
+    company: "Film and Media Council",
+    period: "Nov 2023 - Oct 2023",
+    description: "Create and manage social media content to Enhance Audience Engagement and Elevate Council reach and Lead Effective teamwork and collaborate closely with Club members."
   }
 ];
 
 const education = [
   {
-    degree: "M.S. in Computer Science",
-    institution: "Stanford University",
-    period: "2016 - 2018",
-    description: "Specialized in Data Systems and Cloud Computing. Thesis on distributed data processing systems."
+    degree: "Intermediate degree",
+    institution: "Saiyyid Hamid Senior Secondary School (Boys)",
+    period: "2020 - 2021",
+    description: "Persued PCM for Engineering Field"
   },
   {
-    degree: "B.S. in Computer Engineering",
-    institution: "MIT",
-    period: "2012 - 2016",
-    description: "Graduated with honors. Focus on software engineering and database systems."
+    degree: "B.Tech in Electronics Engineering",
+    institution: "IIT BHU",
+    period: "2022 - 2026",
+    description: "Specialized in Problem solving. Explored field of web Development, Machine learning and Data Analytics"
   }
 ];
 
@@ -41,7 +41,7 @@ export default function ResumeSection() {
   return (
     <section id="resume" className="py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        <motion.h2 
+        <motion.h2
           className="text-3xl font-bold text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,8 +50,8 @@ export default function ResumeSection() {
         >
           Resume Overview
         </motion.h2>
-        
-        <motion.div 
+
+        <motion.div
           className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -63,11 +63,11 @@ export default function ResumeSection() {
             <div className="mb-10">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <i className="fas fa-briefcase text-primary dark:text-blue-400 mr-3"></i>
-                Work Experience
+                POSITION OF RESPONSIBILITY
               </h3>
-              
+
               {experiences.map((experience, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   className="mb-6 border-l-4 border-primary dark:border-blue-600 pl-5 pb-5"
                   initial={{ opacity: 0, x: -20 }}
@@ -88,16 +88,16 @@ export default function ResumeSection() {
                 </motion.div>
               ))}
             </div>
-            
+
             {/* Education */}
             <div className="mb-10">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <i className="fas fa-graduation-cap text-primary dark:text-blue-400 mr-3"></i>
                 Education
               </h3>
-              
+
               {education.map((edu, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   className="mb-6 border-l-4 border-primary dark:border-blue-600 pl-5 pb-5"
                   initial={{ opacity: 0, x: -20 }}
@@ -118,17 +118,17 @@ export default function ResumeSection() {
                 </motion.div>
               ))}
             </div>
-            
-            {/* Certifications */}
+
+            {/* Certifications
             <div className="mb-10">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <i className="fas fa-certificate text-primary dark:text-blue-400 mr-3"></i>
                 Certifications
               </h3>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {certifications.map((cert, index) => (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg flex items-center"
                     initial={{ opacity: 0, y: 10 }}
@@ -144,12 +144,12 @@ export default function ResumeSection() {
                   </motion.div>
                 ))}
               </div>
-            </div>
-            
+            </div> */}
+
             {/* Download Resume */}
             <div className="text-center">
-              <motion.a 
-                href="/api/resume/download" 
+              <motion.a
+                href="https://drive.google.com/file/d/12xoh9qwohkIv4CcSWVtPFCzQ7LkhSkiW/view?usp=sharing"
                 className="inline-flex items-center px-6 py-3 bg-primary hover:bg-blue-600 text-white rounded-lg transition-colors shadow-md"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

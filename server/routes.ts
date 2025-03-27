@@ -19,7 +19,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       const { message } = result.data;
-      
+
       // System prompt for the LLM to understand the context
       const systemPrompt = `
         You are a helpful assistant for John Doe's portfolio website. 
@@ -118,11 +118,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
 
       const contact = result.data;
-      
+
       // In a real implementation, you might send an email
       // or store the contact information in a database
       console.log("Contact form submission:", contact);
-      
+
       return res.status(200).json({ message: "Contact form submitted successfully" });
     } catch (error) {
       console.error("Contact API error:", error);
@@ -135,18 +135,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       // In a real implementation, this would be a path to the actual resume file
       const filePath = path.join(__dirname, "resume.pdf");
-      
+
       // For this demonstration, we're creating a simple text file
       // that says "John Doe's Resume" as a placeholder
       const tempFilePath = path.join(__dirname, "temp_resume.txt");
       fs.writeFileSync(tempFilePath, "John Doe's Resume - Data Engineer & DevOps Specialist");
-      
+
       res.download(tempFilePath, "john_doe_resume.txt", (err) => {
         // Delete the temporary file after download
         if (fs.existsSync(tempFilePath)) {
           fs.unlinkSync(tempFilePath);
         }
-        
+
         if (err) {
           console.error("Resume download error:", err);
           return res.status(500).json({ error: "Failed to download resume" });

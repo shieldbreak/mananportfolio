@@ -57,7 +57,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800 px-6">
       <div className="container mx-auto max-w-4xl">
-        <motion.h2 
+        <motion.h2
           className="text-3xl font-bold text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,8 +66,8 @@ export default function ContactSection() {
         >
           Get In Touch
         </motion.h2>
-        
-        <motion.div 
+
+        <motion.div
           className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -77,8 +77,8 @@ export default function ContactSection() {
           <div className="p-6 md:p-8">
             {/* Contact Info Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              <motion.a 
-                href="mailto:john.doe@example.com" 
+              <motion.a
+                href="mailto:manan.sharma.ece22@gmail.com"
                 className="group bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center transition-all hover:bg-primary dark:hover:bg-primary hover:shadow-lg"
                 whileHover={{ y: -5 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -92,11 +92,11 @@ export default function ContactSection() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-white transition-colors">Email</h3>
                 <p className="text-gray-600 dark:text-gray-400 group-hover:text-white/90 transition-colors">john.doe@example.com</p>
               </motion.a>
-              
-              <motion.a 
-                href="https://github.com/johndoe" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+
+              <motion.a
+                href="https://github.com/MananSharma03"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center transition-all hover:bg-primary dark:hover:bg-primary hover:shadow-lg"
                 whileHover={{ y: -5 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -110,11 +110,11 @@ export default function ContactSection() {
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-white transition-colors">GitHub</h3>
                 <p className="text-gray-600 dark:text-gray-400 group-hover:text-white/90 transition-colors">github.com/johndoe</p>
               </motion.a>
-              
-              <motion.a 
-                href="https://linkedin.com/in/johndoe" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+
+              <motion.a
+                href="https://www.linkedin.com/in/manan-sharma-446886207/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center transition-all hover:bg-primary dark:hover:bg-primary hover:shadow-lg"
                 whileHover={{ y: -5 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -129,7 +129,7 @@ export default function ContactSection() {
                 <p className="text-gray-600 dark:text-gray-400 group-hover:text-white/90 transition-colors">linkedin.com/in/johndoe</p>
               </motion.a>
             </div>
-            
+
             {/* Divider */}
             <div className="relative my-12">
               <div className="absolute inset-0 flex items-center">
@@ -139,7 +139,7 @@ export default function ContactSection() {
                 <span className="bg-white dark:bg-gray-900 px-4 text-sm text-gray-500 dark:text-gray-400">Or send a message</span>
               </div>
             </div>
-            
+
             {/* Contact Form */}
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -198,8 +198,8 @@ export default function ContactSection() {
                   )}
                 />
                 <div>
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     disabled={isSubmitting}
                     className="w-full py-3 px-4 bg-primary hover:bg-blue-600 text-white rounded-lg transition-colors flex items-center justify-center"
                   >
